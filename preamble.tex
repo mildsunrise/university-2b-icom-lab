@@ -1,0 +1,44 @@
+\documentclass[catalan,border=15pt,class=scrartcl,multi=minipage,parskip=half*]{standalone}
+
+% encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{babel}
+
+% formatting and fixes
+\frenchspacing
+\usepackage[style=spanish]{csquotes}
+\MakeAutoQuote{«}{»}
+\usepackage{bookmark}
+
+% ADD ANY SPECIFIC PACKAGES HERE
+% (CHEMISTRY, CODE, PUBLISHING)
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{adjustbox}
+\usepackage{booktabs}
+\usepackage{mathtools}
+\usepackage{commath}
+\usepackage{tikz}
+\usepackage{siunitx}
+\usepackage{nicefrac}
+\usetikzlibrary{calc}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{automata}
+\usepackage{minted}
+
+% other options
+\setcounter{tocdepth}{6}
+\setcounter{secnumdepth}{2}
+
+% hyperlink setup / metadata
+\usepackage{hyperref}
+\AfterPreamble{\hypersetup{
+  pdfauthor={Xavier Mendez},
+  pdfsubject={IPAV},
+}}
+
+% custom commands
+\newcommand{\startpage}{\begin{minipage}{30em} \setlength{\parskip}{0.5em}}
+\newcommand{\finishpage}{\end{minipage}}
+\newcommand{\iopair}[2]{\( \left(#1\right) \rightarrow #2 \)}
